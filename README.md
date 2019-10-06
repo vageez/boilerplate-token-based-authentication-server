@@ -4,6 +4,9 @@
 
 > JWT authentication 
 
+> Passport 
+    > Strategies include authenticating a user with email, password and with JWT Token
+
 > Mongo DB data store 
 
 > Successfull Signup `localhost:8090/signup` - returns token
