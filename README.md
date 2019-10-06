@@ -5,7 +5,7 @@
 > JWT authentication 
 
 > Passport 
-    > Strategies include authenticating a user with email, password and with JWT Token
+    > Strategies include authenticating a user 1. email, password or 2. a JWT Token
 
 > Mongo DB data store 
 
