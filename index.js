@@ -6,6 +6,7 @@ const morgan = require('morgan')
 const app = express()
 const router = require('./router/routes')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 // DB Set Up
 mongoose.connect('mongodb://mongo:27017/mongo', {
@@ -19,6 +20,7 @@ app.use(morgan('combined'))
 // Will try to parse the incoming requests
 // specifically to json, regardless of the type
 app.use(bodyParser.json({ type: '*/*' }))
+app.use(cors())
 router(app)
 
 // Server Setup

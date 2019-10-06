@@ -5,7 +5,7 @@ services:
     image: mongo
     ports:
       - "27017:27017"
-  server---auth:
+  authentication-server:
     build:
       dockerfile: Dockerfile
       context: ./

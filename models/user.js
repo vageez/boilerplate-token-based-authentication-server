@@ -8,6 +8,7 @@ const userSchema = new Schema({
   password: String
 })
 
+// Pre save hook
 userSchema.pre('save', function(next) {
   // Extract currect user
   const user = this
